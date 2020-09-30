@@ -9,15 +9,19 @@
 --PASSWORD AUTHENTICATION-- This app allows users to login safely with password encryption.. Data is stored through the mysql database.
 
 #Middleware:
+
 --isAuthenticated.js-- This javascript file restricts the user from using routes unless they are logged in. If the user is logged in the routes will work and process the request.
-Config.json:  file that define global values and dependancies. Allows access to the database. Configuration to connect to the server 
-Passport.js this contains javascript logic that tells Passport that we are trying to log in. It lets Passport know that we are using an email and password to access the page.
+
+--Config.json--  file that define global values and dependancies. Allows access to the database. Configuration to connect to the server 
+
+----Passport.js-- this contains javascript logic that tells Passport that we are trying to log in. It lets Passport know that we are using an email and password to access the page.
 
 
 #Models:
 
 --index.js-- this is our connection to the database using Sequelize Connects to the database and imports the users login data
-user.js This requires "bcrypt" for password hashing. This makes our database secure even if it is compromised. In this file we have javascript that defines what is stored in our database.;
+
+--user.js-- This requires "bcrypt" for password hashing. This makes our database secure even if it is compromised. In this file we have javascript that defines what is stored in our database.;
 
 #Routes:
 
